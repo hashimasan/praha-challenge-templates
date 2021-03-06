@@ -9,7 +9,7 @@ export class NameApiService {
       "https://random-data-api.com/api/name/random_name"
     );
     const firstName = data.first_name as string;
-
+    console.log("name:" + firstName);
     if (firstName.length > this.MAX_LENGTH) {
       throw new Error("firstName is too long!");
     }
